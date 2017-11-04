@@ -1,0 +1,74 @@
+Assignment: Project3, answers
+Class: DS730, Fall 2017
+Author: Maggie Schweihs
+
+
+/*
+#1.	Output the birth city of the player who had the most at bats (AB) in his career. */
+
+(Cincinnati)
+
+/* #2.
+Output the top three birthdates that had the most players born. I am only looking for day and month combinations.
+For instance, how many were born on February 3rd, how many were born on March 8th, how many were born on July 20th…
+print out the top three dates. */
+
+(11,18)
+(8,15)
+(8,4)
+
+/* #3.
+Output the second most common weight. */
+
+(185)
+
+/* #4.
+Output the team that had the most errors in 2001. */
+
+(SDN)
+
+/* #5.
+Output the name of the player who had the most errors in all seasons combined. */
+
+(Zay,William)
+
+/* #6.
+A player who hits well and doesn’t commit a lot of errors is obviously a player you want on your team.
+Who were the top 3 players from 2005 through 2009 (including 2005 and 2009) who maximized the following criterion:
+ (number of hits (H) / number of at bats (AB)) – (number of errors (E) / number of games (G))
+The above equation might be skewed by a player who only had 3 at bats but got two hits.
+To account for that, only consider players who had at least 40 at bats and played in at least 20 games over that entire 5 year span.
+You should note that both files contain a number of games column. The 20 game minimum is from the Fielding file.
+Be aware that some players played for multiple teams during that 5 year span. Also be aware that a player could have played multiple
+positions during that span (see for instance, buchabr01 in 2004 who played LF, OF and RF in the same season).
+You may need a UDF for this problem.
+ */
+
+(Escobar,Alexander Jose)
+(Hopper,Norris Stephen)
+(Suzuki,Ichiro)
+
+/* #7.
+Sum up the number of doubles and triples for each city/state combination.
+Output the top 5 city/state combinations that produced the players who had the most doubles and triples.
+ */
+
+((CA,Los Angeles))
+((IL,Chicago))
+((PA,Philadelphia))
+((MO,St. Louis))
+((CA,San Francisco))
+
+/* #8.
+Output the birthMonth/state combination that produced the worst players.
+The worst players are defined by the lowest of:  (number of hits (H) / number of at bats (AB))
+  To ensure 1 player does not skew the data, make sure that at least 5 people came from the same state and were born in
+the same month. For this problem, the year does not matter. A player born in December, 1970 in Michigan and a player born
+in December, 1982 in Michigan are in the same group because they were both born in December and are from Michigan.
+ */
+
+(12,WV)
+
+
+
+

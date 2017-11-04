@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-# from pig_utils import outputSchema 
+# Assignment: Project3, pig UDF
+# Class: DS730, Fall 2017
+# Author: Maggie Schweihs*/
+
 #  getTopStat is used to determine the top baseball player using equation:
 #  (number of hits (H) / number of at bats (AB)) – (number of errors (E) / number of games (G))
 @outputSchema('value:double')
