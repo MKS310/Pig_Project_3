@@ -6,13 +6,13 @@ Author: Maggie Schweihs*/
 #1.	Output the birth city of the player who had the most at bats (AB) in his career. */
 
 -- LOAD all data
-batters =  LOAD 'hdfs:/home/ubuntu/pigtest/Batting.csv' using PigStorage(',') AS (playerID:chararray, yearID:int, teamID:chararray,
+batters =  LOAD 'hdfs:/home/ubuntu/pig/Batting.csv' using PigStorage(',') AS (playerID:chararray, yearID:int, teamID:chararray,
 lgID:chararray,G:int,AB:float,R:int,H:float,B2:int,B3:int,HR:int,RBI:int,SB:int,CS:int,BB:int,SO:int,IBB:int,HBP:int,SH:int,SF:int,GIDP:int);
-master =  LOAD 'hdfs:/home/ubuntu/pigtest/Master.csv' using PigStorage(',') AS (playerID:chararray,birthYear:int,birthMonth:int,
+master =  LOAD 'hdfs:/home/ubuntu/pig/Master.csv' using PigStorage(',') AS (playerID:chararray,birthYear:int,birthMonth:int,
 birthDay:int,birthCountry:chararray,birthState:chararray,birthCity:chararray,deathYear:int,deathMonth:chararray,deathDay:int,
 deathCountry:chararray,deathState:chararray,deathCity:chararray,nameFirst:chararray,nameLast:chararray,nameGiven:chararray,
 weight:int,height:int,bats:int,throws:int,debut:chararray,finalGame:chararray,retroID:chararray,bbrefID:chararray);
-fielding = LOAD 'hdfs:/home/ubuntu/pigtest/Fielding.csv' using PigStorage(',') AS (playerID:chararray,yearID:int,teamID:chararray,
+fielding = LOAD 'hdfs:/home/ubuntu/pig/Fielding.csv' using PigStorage(',') AS (playerID:chararray,yearID:int,teamID:chararray,
 lgID:chararray,POS:chararray, G:float,GS:int,InnOuts:int,PO:int,A:int,E:float,DP:int,PB:int,WP:int,SB:int,CS:int,ZR:int);
 
 realbatters = FILTER batters BY $1>0;
